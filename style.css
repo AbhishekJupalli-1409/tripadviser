@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Gabarito", sans-serif;
+  }
+
+  #tabs::-webkit-scrollbar{
+    display: none !important;
+  }
+  #tabs{
+    -ms-overflow-style: none !important;  /* IE and Edge */
+    scrollbar-width: none !important; 
+  }
+  
+  .navbar {
+    padding: 10px;
+    display: flex;
+    
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+  }
+  .navbar__s1 {
+    display: none;
+  }
+  .navbar__s2 {
+    padding: 10px;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .navbar__s3 {
+    padding: 10px;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .navbar__s4 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px;
+    width: 15%;
+    gap: 10px;
+  }
+  .navbar_s4__btn {
+    display: inline-block;
+    gap: 10px;
+    align-items: flex-end;
+  }
+  .navbar__s4 .btn {
+    padding: 10px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+  }
+  .title {
+    font-size: 24px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  .tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .tabs__list {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .search {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    width: 50%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .search input {
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    background: transparent;
+    padding: 5px;
+  }
+  .search input:focus {
+    outline: none;
+  }
+  .search__btn {
+    position: absolute;
+    right: 10px;
+    background-color: #34e0a1;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .search__btn:hover {
+    background-color: #84e9bd;
+  }
+  .banner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+  }
+  .banner-container__item1,
+  .banner-container__item3 {
+    padding: 20px;
+    flex: 1;
+  }
+  .banner-container__item2 {
+    padding: 20px;
+    flex: 10;
+    position: relative;
+  }
+  .banner-container__item2 img {
+    width: 100%;
+  }
+  .banner-container__item2-sale {
+    position: absolute;
+    background-color: #fff;
+    width: 30%;
+    padding: 2%;
+    top: 10%;
+    left: 10%;
+  }
+  .banner-container__item2-sale p {
+    padding: 5px;
+  }
+  .banner-container__item2-sale h2 {
+    font-size: 38px;
+    font-weight: bolder;
+    padding: 5px;
+  }
+  .banner-container__item2-sale .sub-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .banner-container__item2-sale button {
+    margin: 10px;
+    padding: 20px;
+    border: none;
+    background-color: #301d49;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 16px;
+  }
+  /* card */
+  .adventure-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+  }
+  .adventure-container__item1,
+  .adventure-container__item3 {
+    padding: 20px;
+    flex: 1;
+  }
+  .adventure-container__item2 {
+    padding: 20px;
+    flex: 10;
+  
+    /* font-size: 1.5rem;  */
+  }
+  
+  .adventure-container__item2-subtitle {
+    margin-top: 5px;
+  }
+  /* adventure card desgin */
+  .img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 10px;
+    position: relative;
+  }
+  .img-container img {
+    width: 250px;
+    height: 250px;
+    padding: 10px, 0px;
+    border-radius: 10px;
+    /* opacity: 0.9; */
+  }
+  .img-container__list p {
+    position: absolute;
+    bottom: 10px;
+    /* left: 10px; */
+    padding-left: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 5;
+  }
+  
+  /* madras */
+  .tour-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+  }
+  .tour-container__item1,
+  .tour-container__item3 {
+    padding: 20px;
+    flex: 1;
+  }
+  .tour-container__item2 {
+    padding: 20px;
+    flex: 10;
+  }
+  .tour-container__item2-img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 10px;
+    position: relative;
+  }
+  .tour-container__item2-img-container__list {
+    width: 250px;
+    height: 250px;
+    padding: 10px, 0px;
+    border-radius: 10px;
+  }
+  .tour-container__item2-img-container__list img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .tour-container__item2-img-container__body {
+    font-size: 18px;
+    padding: 2px;
+  }
+  .tour-container__item2-img-container__body .about {
+    font-size: 18px;
+    padding-top: 5px;
+  }
+  .tour-container__item2-img-container__body .review {
+    font-size: 18px;
+    padding-top: 5px;
+  }
+  .tour-container__item2-img-container__body .price {
+    font-weight: 600;
+    padding-top: 5px;
+  }
+  .footer {
+    padding: 30px;
+    background-color: #FAF1ED;
+    color: #000;
+  }
+  .footer__one {
+    display: flex;
+    gap: 10px;
+  }
+  .footer__one p {
+    margin: 20px;
+  }
+  .footer__two {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+  }
+  @media screen and (max-width: 760px) {
+    .navbar__s1 {
+      display: block;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar__s3 {
+      display: none;
+    }
+    .navbar_s4__btn {
+      display: none;
+    }
+    .title {
+      display: none;
+    }
+  }
+  
