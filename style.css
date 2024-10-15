@@ -20,6 +20,18 @@
     scrollbar-width: none !important; 
   }
   
+
+
+                                /* NAV BAR CSS */
+.add-border{
+  
+  border-bottom: 2px solid grey;
+}
+
+.display-links{
+  display: block !important;
+}
+
  
 
                                /* banner css */
@@ -28,6 +40,10 @@
   background-image: url('https://static.tacdn.com/img2/trips/home-gai-entry-gateway-dv.jpg');
   object-fit:contain;
 }
+
+
+
+
 
 
 
