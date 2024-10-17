@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Gabarito", sans-serif;
+  }
+
+  body::-webkit-scrollbar{
+    display: none !important;
+  }
+
+  #tabs::-webkit-scrollbar{
+    display: none !important;
+  }
+  #tabs{
+    -ms-overflow-style: none !important;  /* IE and Edge */
+    scrollbar-width: none !important; 
+  }
+  
+
+#hotel-image{
+    background-image: url("https://static.tacdn.com/img2/branding/homepage/hotel-hero-default-4.jpg");
+    height: 50vh;
+}
