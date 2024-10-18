@@ -31,16 +31,23 @@ window.addEventListener("scroll", function navBorder() {
 window.addEventListener("scroll", function () {
   const elements1 = document.getElementById("trigger-card");
   const elements2 = document.getElementById("response-card");
+  const SearchelementNav = document.getElementById("search-hidden");
+  const HiddenformElement = document.getElementById("hidden-form-element");
+
 
   // Get the bottom position of element1
     const elements1Top = elements1.getBoundingClientRect().top;
-    console.log(elements1Top)
+    // console.log(elements1Top)
 
   // If the bottom of element1 is less than 0, make element2 fixed
   if (elements1Top < 0) {
     elements2.classList.add("display-links");
+    SearchelementNav.classList.add("display-links");
+    HiddenformElement.classList.add("hide-element");
   } else {
     elements2.classList.remove("display-links");
+    SearchelementNav.classList.remove("display-links");
+    HiddenformElement.classList.remove("hide-element")
   }
 });
   
